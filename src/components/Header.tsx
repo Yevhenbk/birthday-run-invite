@@ -6,7 +6,7 @@ export default function Header() {
         Bienvenidos a
       </h1>
       <h2 className="text-3xl md:text-4xl font-semibold bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent mb-4">
-        Andrea's Birthday Run
+        Andrea&apos;s Birthday Run
       </h2>
       <p className="text-blue-700 font-light text-lg mb-2">
         ¡Gracias por acompañarme en mis 25 años!

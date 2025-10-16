@@ -33,7 +33,7 @@ export default function FormSection({ formData, setFormData, formSubmitted, setF
         setFormData({ name: '', email: '', distance: '', comments: '' });
         setTimeout(() => setFormSubmitted(false), 3000);
       }
-    } catch (error) {
+    } catch {
       console.log('Form submitted locally');
       setFormSubmitted(true);
       setTimeout(() => setFormSubmitted(false), 3000);
