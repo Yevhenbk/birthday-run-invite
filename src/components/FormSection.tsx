@@ -111,7 +111,7 @@ export default function FormSection({ formData, setFormData, formSubmitted, setF
         <button
           type="submit"
           disabled={formSubmitted}
-          className="w-full bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 disabled:opacity-50 disabled:cursor-not-allowed text-white font-medium py-3 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-md flex items-center justify-center gap-2"
+          className="w-full bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 disabled:opacity-50 disabled:cursor-not-allowed text-white font-medium py-3 rounded-xl transition-all duration-300 transform hover:cursor-pointer shadow-md flex items-center justify-center gap-2"
         >
           {formSubmitted ? (
             <>
