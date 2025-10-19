@@ -15,6 +15,20 @@ A beautiful and interactive birthday run invitation app built with Next.js, feat
 
 Visit the live app: [Andrea's Birthday Run Invite](https://andreas-birthday-run.vercel.app/)
 
+## 📸 Preview
+
+### Main Page
+![Main Page Preview](public/main_page_preview.png)
+*Complete registration form with photo upload functionality and medal download section*
+
+### Medal Page
+![Medal Page Preview](public/medal_page_preview.png)
+*Dedicated medal page with full-screen certificate display and download functionality*
+
+### Downloadable Medal Certificate
+![Andrea's Birthday Run Medal](public/Andreas-Birthday-Run-Medal.svg)
+*Personalized SVG medal that users can download as PNG - features custom gradients and Andrea's name*
+
 ## Tech Stack
 
 - **Framework**: Next.js 15.5.5 with App Router
