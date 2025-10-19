@@ -1,8 +1,8 @@
-# 🏃‍♀️ Andrea's Birthday Run Invite
+# Andrea's Birthday Run Invite
 
 A beautiful and interactive birthday run invitation app built with Next.js, featuring participant registration, photo uploads, and downloadable medal certificates.
 
-## ✨ Features
+## Features
 
 - **📝 Registration Form**: Complete registration form with participant details
 - **📸 Photo Upload**: Upload and email photos directly from the app
@@ -11,11 +11,11 @@ A beautiful and interactive birthday run invitation app built with Next.js, feat
 - **🎨 Modern UI**: Beautiful gradients, animations, and interactive elements
 - **📧 Email Integration**: Automatic email sending with EmailJS
 
-## 🚀 Live Demo
+## Live Demo
 
 Visit the live app: [Andrea's Birthday Run Invite](https://andreas-birthday-run.vercel.app/)
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Framework**: Next.js 15.5.5 with App Router
 - **Language**: TypeScript
@@ -24,7 +24,7 @@ Visit the live app: [Andrea's Birthday Run Invite](https://andreas-birthday-run.
 - **Email Service**: EmailJS
 - **Form Handling**: Formspree + Custom validation
 
-## 📦 Installation
+## Installation
 
 1. **Clone the repository**
    ```bash
@@ -59,7 +59,7 @@ Visit the live app: [Andrea's Birthday Run Invite](https://andreas-birthday-run.
 6. **Open your browser**
    Navigate to [http://localhost:3000](http://localhost:3000)
 
-## 📧 EmailJS Setup
+## EmailJS Setup
 
 ### 1. Create EmailJS Account
 1. Go to [emailjs.com](https://www.emailjs.com/)
@@ -86,7 +86,7 @@ Visit the live app: [Andrea's Birthday Run Invite](https://andreas-birthday-run.
 ### 5. Update Environment Variables
 Add all the IDs to your `.env.local` file
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
 birthday-run-invite/
@@ -111,7 +111,7 @@ birthday-run-invite/
 └── package.json            # Dependencies
 ```
 
-## 🎨 Component Features
+## Component Features
 
 ### PhotoUpload Component
 - **File Validation**: Supports JPG, PNG, GIF (max 5MB)
@@ -129,7 +129,7 @@ birthday-run-invite/
 - **Formspree Integration**: Handles form submissions
 - **Responsive Design**: Mobile-optimized form layout
 
-## 🚀 Deployment
+## Deployment
 
 ### Deploy to Vercel (Recommended)
 
@@ -153,7 +153,7 @@ Make sure to add all environment variables in your hosting platform:
 - `NEXT_PUBLIC_EMAILJS_PUBLIC_KEY`
 - `NEXT_PUBLIC_RECIPIENT_EMAIL`
 
-## 📱 Pages
+## Pages
 
 ### Main Page (`/`)
 - Registration form
@@ -166,14 +166,14 @@ Make sure to add all environment variables in your hosting platform:
 - Direct download functionality
 - Shareable URL
 
-## 🎯 Usage
+## Usage
 
 1. **Fill Registration Form**: Enter participant details
 2. **Upload Photo**: Select and upload a race photo
 3. **Download Medal**: Get your personalized completion certificate
 4. **Share**: Share the medal page with friends
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
@@ -181,15 +181,15 @@ Make sure to add all environment variables in your hosting platform:
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📄 License
+## License
 
 This project is open source and available under the [MIT License](LICENSE).
 
-## 👨‍💻 Author
+## Author
 
 **Yevhen** - [GitHub](https://github.com/Yevhenbk)
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Built with [Next.js](https://nextjs.org/)
 - Styled with [Tailwind CSS](https://tailwindcss.com/)
