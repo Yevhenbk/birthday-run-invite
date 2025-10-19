@@ -15,7 +15,7 @@ A beautiful and interactive birthday run invitation app built with Next.js, feat
 
 Visit the live app: [Andrea's Birthday Run Invite](https://andreas-birthday-run.vercel.app/)
 
-## 📸 Preview
+## Preview
 
 ### Main Page
 ![Main Page Preview](public/main_page_preview.png)
