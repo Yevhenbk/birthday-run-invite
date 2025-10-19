@@ -22,7 +22,7 @@ export default function FormSection({ formData, setFormData, formSubmitted, setF
     
     try {
       // Replace 'YOUR_FORM_ID' with your actual Formspree form ID when ready
-      const response = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
+      const response = await fetch('https://formspree.io/f/xkgqezzg', {
         method: 'POST',
         body: JSON.stringify(formData),
         headers: { 'Content-Type': 'application/json' }

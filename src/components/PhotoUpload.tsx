@@ -1,5 +1,6 @@
 import React from 'react';
 import { Camera } from 'lucide-react';
+import emailjs from '@emailjs/browser';
 
 interface PhotoUploadProps {
   photoSubmitted: boolean;
@@ -10,7 +11,7 @@ export default function PhotoUpload({ photoSubmitted, setPhotoSubmitted }: Photo
   const handlePhotoUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
     if (file) {
-      // Validate file size (10MB limit)
+      // Validate file size (10MB limit - Formspree allows up to 10MB)
       if (file.size > 10 * 1024 * 1024) {
         alert('El archivo es demasiado grande. Por favor, selecciona una imagen menor a 10MB.');
         return;
@@ -22,10 +23,51 @@ export default function PhotoUpload({ photoSubmitted, setPhotoSubmitted }: Photo
         return;
       }
       
-      setPhotoSubmitted(true);
-      setTimeout(() => setPhotoSubmitted(false), 3000);
-      // In production, upload to Formspree with your form ID
-      console.log('Photo uploaded:', file.name);
+      try {
+        // Convert image to base64
+        const reader = new FileReader();
+        
+        reader.onload = async (e) => {
+          const base64Image = e.target?.result as string;
+          
+          // Prepare email data
+          const templateParams = {
+            to_email: process.env.NEXT_PUBLIC_RECIPIENT_EMAIL,
+            from_name: 'Birthday Run App',
+            subject: 'Nueva foto - Andrea\'s Birthday Run',
+            message: `Nueva foto subida: ${file.name}`,
+            photo_name: file.name,
+            photo_size: `${(file.size / 1024 / 1024).toFixed(2)} MB`,
+            photo_data: base64Image, // Base64 image data
+            upload_time: new Date().toLocaleString()
+          };
+
+          try {
+            // Send email via EmailJS using environment variables
+            await emailjs.send(
+              process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+              process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+              templateParams,
+              process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
+            );
+
+            setPhotoSubmitted(true);
+            setTimeout(() => setPhotoSubmitted(false), 3000);
+            console.log('Photo sent to email successfully!');
+            
+          } catch (emailError) {
+            console.error('Email sending failed:', emailError);
+            alert('Error al enviar la foto por email. Por favor, inténtalo de nuevo.');
+          }
+        };
+
+        // Start reading the file
+        reader.readAsDataURL(file);
+        
+      } catch (error) {
+        console.error('Photo processing error:', error);
+        alert('Error al procesar la foto. Por favor, inténtalo de nuevo.');
+      }
     }
   };
 
