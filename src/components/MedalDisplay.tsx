@@ -71,6 +71,10 @@ export default function MedalDisplay() {
         
         <!-- Outer decorative ring -->
         <circle cx="100" cy="100" r="95" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.5" stroke-dasharray="5,3"/>
+        
+        <!-- Andrea's Birthday Text - Match display version exactly -->
+        <text x="100" y="145" font-size="12" font-weight="600" text-anchor="middle" fill="url(#accent)" font-family="Arial, sans-serif">Andrea's Birthday</text>
+        <text x="100" y="160" font-size="12" font-weight="600" text-anchor="middle" fill="url(#accent)" font-family="Arial, sans-serif">Run</text>
       </svg>
     `;
     
@@ -141,6 +145,16 @@ export default function MedalDisplay() {
               </g>
               
               <circle cx="100" cy="100" r="95" fill="none" stroke="rgba(255,255,255,0.3)" strokeWidth="1.5" strokeDasharray="5,3"/>
+              
+              {/* STYLING REFERENCE: Andrea's Birthday Text */}
+              {/* You can modify these text elements to change the styling: */}
+              {/* - fontSize: Change text size (currently 12) */}
+              {/* - fill: Change text color (currently "url(#accent)" for gradient) */}
+              {/* - fontWeight: Change text thickness (currently "600") */}
+              {/* - fontFamily: Change font (currently "Arial, sans-serif") */}
+              {/* - x, y: Change position */}
+              <text x="100" y="145" fontSize="12" fontWeight="600" textAnchor="middle" fill="url(#accent)" fontFamily="Arial, sans-serif">Andrea&apos;s Birthday</text>
+              <text x="100" y="160" fontSize="12" fontWeight="600" textAnchor="middle" fill="url(#accent)" fontFamily="Arial, sans-serif">Run</text>
             </svg>
           </div>
         </div>
