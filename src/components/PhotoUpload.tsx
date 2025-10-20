@@ -11,9 +11,9 @@ export default function PhotoUpload({ photoSubmitted, setPhotoSubmitted }: Photo
   const handlePhotoUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
     if (file) {
-      // Validate file size (10MB limit - Formspree allows up to 10MB)
-      if (file.size > 10 * 1024 * 1024) {
-        alert('El archivo es demasiado grande. Por favor, selecciona una imagen menor a 10MB.');
+      // Validate file size (50MB limit - Supports high-resolution professional photos)
+      if (file.size > 50 * 1024 * 1024) {
+        alert('El archivo es demasiado grande. Por favor, selecciona una imagen menor a 50MB.');
         return;
       }
       
