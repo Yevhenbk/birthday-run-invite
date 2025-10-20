@@ -16,9 +16,9 @@ export const metadata: Metadata = {
   title: "Andrea's 25th Birthday Run - Join the Celebration!",
   description: "Join Andrea's 25th birthday celebration! Together we'll run 25km - 1km each person. Share your commitment, upload your photos, and get your virtual medal!",
   icons: {
-    icon: '/logo.svg',
-    shortcut: '/logo.svg',
-    apple: '/logo.svg',
+    icon: '/Andreas-Birthday-Run-Medal.svg',
+    shortcut: '/Andreas-Birthday-Run-Medal.svg',
+    apple: '/Andreas-Birthday-Run-Medal.svg',
   },
 };
 
