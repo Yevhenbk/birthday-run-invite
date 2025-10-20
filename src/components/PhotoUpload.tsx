@@ -89,7 +89,7 @@ export default function PhotoUpload({ photoSubmitted, setPhotoSubmitted }: Photo
             {photoSubmitted ? '✓ Foto enviada' : 'Haz clic para subir tu foto'}
           </p>
           <p className="text-blue-600 font-light text-sm mt-1">
-            PNG, JPG o GIF (máx. 10MB)
+            PNG, JPG o GIF (máx. 50MB)
           </p>
         </div>
         <input
